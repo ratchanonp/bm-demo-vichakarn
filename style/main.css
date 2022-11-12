@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.menu-item {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+}
+
+.menu-item.active > a{
+    background-color: #f00;
+    color:white;
+    
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.grid-item {
+    background-color: #f00;
+    padding: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
+    gap: 40px;
+}
+
+.cta h1 {
+    font-size: 4rem;
+}
+
+.cta button {
+    background-color: #f00;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.cta > div > img {
+    width: 100%;
+}
+
+.cta-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-item label {
+    font-size: 1.5rem;
+}
+
+.form-item input {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.form-item select {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.form button {
+    background-color: #f00;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.images img {
+    width: 100%;
+
+    border-radius: 15px;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: #f4f4f4 0px 0px 10px;
+}
